@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="logo"></div>
+         <div class="title">ARR Converter</div>
+         <div class="inputs">
+            <label>Aldosterone</label>
+            <input type="text" id="aldosterone" value="" placeholder="Enter aldosterone...">
+            <div class="select">
+               <select id="aldoMU">
+                  <option value="" disabled selected>Select measurement unit</option>
+                  <option value="1">ng/dL</option>
+                  <option value="2">pmol/L</option>
+                  <option value="3">pg/mL</option>
+               </select>
+            </div>
+            <label>Renin</label>
+            <input type="text" id="renin" value="" placeholder="Enter renin...">
+            <div class="select">
+               <select id="reninMU">
+                  <option value="" disabled selected>Select measurement unit</option>
+                  <option value="ng/mL">ng/mL</option>
+                  <option value="mIU/mL">mIU/mL</option>
+               </select>
+             </div>
+         </div>
+         <p></p>
+         <button class="btn evaluate" id="button"onclick="Evaluate()">Calculate!</button>
+         <h2 id="result"></h2>
+         <div class="reset" id="url"><a href="file:///C:/Users/vapum/Desktop/static/index.html">Reset</a></div>
+      </div>
+      <script type="text/javascript" src="./calc.js"></script>
+   </body>
+</html>

@@ -17,6 +17,10 @@ function Evaluate() {
             return "at least one measurement option must be selected"
         }
 
+        if (((aldo != "") && (aldoMU == "")) || ((renin != "") && (reninMU == ""))) {
+            return "measurement unit not selected"
+        }
+
         if ((isNaN(aldo)) || (isNaN(renin))) {
             return "values must be numbers"
         }
